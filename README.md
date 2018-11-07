@@ -1,8 +1,8 @@
-# Getting starting with git AND GitHub using RStudio
+# Getting starting with git And GitHub using RStudio
 
 ### This repository a re-organization of NCEAS training material on version control to create a 30-45min crash course on getting started with version control for RStudio users.
 
-We will cover
+We will cover:
 
 - Introduction to code versioning concepts
 - Setting up git on computer
