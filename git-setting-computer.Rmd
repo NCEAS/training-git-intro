@@ -12,8 +12,6 @@ output:
     toc_depth: 2
     toc_float: true
     number_sections: true
-params: 
-  output_dir: "./docs"
 ---
 
 # Setting up git on your computer
