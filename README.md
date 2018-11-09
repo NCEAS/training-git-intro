@@ -1,4 +1,4 @@
-# Getting starting with git And GitHub using RStudio
+# Getting starting with `git` and `GitHub` using `RStudio`
 
 ### This repository is a re-organization of [NCEAS](https://github.com/NCEAS/) training material on version control to create a 30-45min crash course on getting started with version control for RStudio users.
 
