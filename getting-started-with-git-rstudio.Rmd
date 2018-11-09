@@ -1,6 +1,7 @@
 ---
 title: "Getting starting with git and GitHub using RStudio"
-author: "Julien Brun, NCEAS"
+author: "NCEAS"
+maintainer: "Julien Brun"
 output: 
   html_document:
     theme: "spacelab"
@@ -19,25 +20,25 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br>
 <br>
-This document is a compilation of [NCEAS](https://github.com/NCEAS/) training material on version control to create a 30-45 min crash course on getting started with version control for RStudio users. You will learn:
+This document is a compilation of [NCEAS](https://github.com/NCEAS/) training material on version control to create a 45-60 min crash course on getting started with version control for RStudio users. You will learn:
 
-- how to setup git on you rmachine
+- how to setup git on your machine
 - how to create repository on GitHub
 - git basic workflow an manipulations using RStudio
-- Collabarating using git and GitHub
+- Collaborating using git and GitHub
 
 <br>
 
 # Introduction to version control concepts
 
-Version control is a system that helps you to manage the version of your files. It will help you to never have to duplicate files using `save as` as a way to keep different versions of a file (see below). Version control help you to create a timeline of snapshots contiaing different versions of a file. Bonus you can add a short description to remember what each specific version is about.
+Version control is a system that helps you to manage the version of your files. It will help you to never have to duplicate files using `save as` as a way to keep different versions of a file (see below). Version control help you to create a timeline of snapshots containing different versions of a file. Bonus you can add a short description to remember what each specific version is about.
 
 ```{r file version craziness, out.width='60%', fig.align='center', echo = FALSE}
 knitr::include_graphics("images/phd_comics_final.png")
 ```
 
 
-For scientists, version control is a useful tool to help you to track changes you make to your **scripts** and enable you to share your codes with your collaborators. For example, if you break your code, git can help you to revert to an earlier working version. Anothe example could be that you want one of your collaborators to add a new feature to your code to improve your analysis? Version control can help you to do so in a smooth and organized manner, tracking who changed what in the script.
+For scientists, version control is a useful tool to help you to track changes you make to your **scripts** and enable you to share your codes with your collaborators. For example, if you break your code, git can help you to revert to an earlier working version. Another example could be that you want one of your collaborators to add a new feature to your code to improve your analysis? Version control can help you to do so in a smooth and organized manner, tracking who changed what in the script.
 
 ---
 
@@ -45,7 +46,7 @@ For scientists, version control is a useful tool to help you to track changes yo
 
 # git <img style="float: right;width: 100px;" src="images/git_icon.png">
 
-This training material focuses on the code verioning system calld `Git`. Note that there are others, such as `Mercurial` or `svn` for example.
+This training material focuses on the code versioning system called `Git`. Note that there are others, such as `Mercurial` or `svn` for example.
 
 Git is a *free* and *open source* distributed *version control system*. It has many functionalities and was originally geared towards software development and production environment. In fact, Git was initially designed and developed in 2005 by Linux kernel developers (including Linus Torvalds) to track the development of the Linux kernel. Here is a [fun video](https://www.youtube.com/watch?v=4XpnKHJAok8) of Linus Torvalds touting Git to Google. 
 
@@ -64,7 +65,7 @@ Git can be enabled on a specific folder/directory on your file system to version
 
 # Setting up git on your computer
 
-`MacOSX` and `Linux` computers all come with git presinstall, but not always directly usable. The best way to test if `git` is ready to use is at the command line:
+`MacOSX` and `Linux` computers all come with git pre-install, but not always directly usable. The best way to test if `git` is ready to use is at the command line:
 
 ```{bash git test}
 git --version
@@ -132,7 +133,7 @@ Problem with any of those steps? Check out Jenny Brian [Happy git trouble shooti
 
 ## Linking git and RStudio
 
-In most of the cases, RStudio should autmatically detect `git` when it is installed on your computer. The best way to check this is to go to the `Tools` menu `-> Global Option`s and click on `git/SVN`
+In most of the cases, RStudio should automatically detect `git` when it is installed on your computer. The best way to check this is to go to the `Tools` menu `-> Global Option`s and click on `git/SVN`
 
 If `git` is properly setup, the window should look like this:
 
@@ -238,7 +239,7 @@ knitr::include_graphics("images/rstudio-project-version-control.png")
 3. Select `git`
 4. Go back to your web browser and from the GitHub repository page click on the green `clone or download` button and copy the URL to your repository  
 ![](images/github-get-url.png)
-5. Paste this URL in the first box and leave the second box empty. Finally select a location on your HD where the repostiry will be cloned to.
+5. Paste this URL in the first box and leave the second box empty. Finally select a location on your HD where the repository will be cloned to.
 ```{r RStudio project git panel, out.width='50%', fig.align='center', echo = FALSE}
 knitr::include_graphics("images/rstudio-project-clone.png")
 ```
@@ -277,9 +278,9 @@ We are going to edit the `README.md` file, adding more information about the rep
 
 <br>
 
-# Tracking your file changes with `git` -- Basic workflow
+# Tracking your file changes with `git` 
 
-## Overview
+## Basic Workflow Overview
 
 <img style="float: right;width: 300px;" src="images/git_workflow_general.png">
 
@@ -290,16 +291,20 @@ We are going to edit the `README.md` file, adding more information about the rep
 3. You do a **commit**, which takes the files as they are in the staging area and permanently stores them as snapshots to your Git directory.
 
 
-We can make an anlology with taking a family picture, where eache family member would represent a file.
+We can make an analogy with taking a family picture, where each family member would represent a file.
 
-- **Add**ing files (to the stagging area), is like deciding which family member(s) are going to be on your next picture
+- **Add**ing files (to the staging area), is like deciding which family member(s) are going to be on your next picture
 - **Commit**ting is like taking the picture
 
 These 2-step process enables you to flexibly group files into a specific commit.
 
-These steps are repeated for every version you want to keep (every time you would like to use `save as`). Every time you commit, you create a new snapshot, you add the new version of the file to the git database, while keeping all the previous versions in the database. It creates an history of the content of your repostory that is like a graph that you can navigate:
+These steps are repeated for every version you want to keep (every time you would like to use `save as`). Every time you commit, you create a new snapshot, you add the new version of the file to the git database, while keeping all the previous versions in the database. It creates an history of the content of your repository that is like a graph that you can navigate:
 
 <img style="align: left;width: 200px;" src=images/version-graph_mattJones.png />
+
+
+
+
 
 ---
 
