@@ -1,0 +1,97 @@
+---
+title: "Setting up git on your computer"
+author: "NCEAS"
+maintainer: "Julien Brun"
+output: 
+  html_document:
+    include:
+      after_body: footer.html
+    theme: "spacelab"
+    # df_print: "paged"
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+params: 
+  output_dir: "./docs"
+---
+
+# Setting up git on your computer
+
+`MacOSX` and `Linux` computers all come with git pre-install, but not always directly usable. The best way to test if `git` is ready to use is at the command line:
+
+```{bash git test}
+git --version
+```
+
+It should return something like above. *If you get an error, you will have to install git**
+
+
+`Windows` users will have to install a software called `git bash` before being able to use git.
+
+
+## Installing git
+
+You can download a copy of `git` here: https://git-scm.com/downloads and follow the instructions. 
+
+
+### Windows
+
+You can keep the options to default during the installation, until you reach `Configuring the terminal emulator to use with Git Bash` -> be sure `Use MinTTY` is selected.  This will install both git and a set of useful command-line tools using a trimmed down Bash shell. 
+
+
+### Mac OSX 
+
+Depending on the version, you might have to run few commands from the terminal. Please refer to the `README.txt` that comes with the download regarding the exact steps to follow.
+
+
+## Setting up your `git` identity
+
+Before you start using git on any computer, you will have to set your identity on your system, as every snapshot of files is associated with the user whom implemented the modifications to the file(s).
+
+Open the `Terminal` or `git bash` and then type the following commands.
+
+### Setup your profile
+
+Your name and email: 
+
+```{bash git identity, eval=FALSE}
+git config --global user.name "your Full Name"
+git config --global user.email "your Email"
+```
+
+### Optional
+
+Check that everything is correct: 
+
+```{bash git config list, eval=FALSE}
+git config --global --list
+```
+
+Modify everything at the same time:
+
+```{bash git config edit, eval=FALSE}
+git config --global --edit
+```
+
+Set your text editor: 
+
+```{bash git config editor, eval=FALSE}
+git config --system core.editor nano
+```
+
+Here [`nano`]() is used as example; you can choose most of the text editor you might have installed on your computer (atom, sublime, notepad++ ...).
+
+Problem with any of those steps? Check out Jenny Brian [Happy git trouble shooting section] (http://happygitwithr.com/troubleshooting.html){target="_blank"}
+
+## Linking git and RStudio
+
+In most of the cases, RStudio should automatically detect `git` when it is installed on your computer. The best way to check this is to go to the `Tools` menu `-> Global Option`s and click on `git/SVN`
+
+If `git` is properly setup, the window should look like this:
+
+<img style="align: left;width: 450px;" src=images/rstudio-git.png />
+
+Click `OK`. 
+
+_Note:_ if `git` was not enabled, you might be asked to restart RStudio to enable it.

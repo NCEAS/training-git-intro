@@ -1,0 +1,30 @@
+---
+title: "Git intro"
+author: "NCEAS"
+maintainer: "Julien Brun"
+output: 
+  html_document:
+    include:
+      after_body: footer.html
+    theme: "spacelab"
+    # df_print: "paged"
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+---
+
+# git <img style="float: right;width: 100px;" src="images/git_icon.png">
+
+This training material focuses on the code versioning system called `Git`. Note that there are others, such as `Mercurial` or `svn` for example.
+
+Git is a *free* and *open source* distributed *version control system*. It has many functionalities and was originally geared towards software development and production environment. In fact, Git was initially designed and developed in 2005 by Linux kernel developers (including Linus Torvalds) to track the development of the Linux kernel. Here is a [fun video](https://www.youtube.com/watch?v=4XpnKHJAok8) of Linus Torvalds touting Git to Google. 
+
+## How does it work?
+
+Git can be enabled on a specific folder/directory on your file system to version files within that directory (including sub-directories). In git (and other version control systems) terms, this “tracked folder” is called a **repository** (which formally is a specific data structure storing versioning information).
+
+# What git is not
+
+- Git is not a backup per se
+- Git is not good at versioning large files (there are workarounds) => not meant for data
