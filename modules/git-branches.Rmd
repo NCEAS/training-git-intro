@@ -1,0 +1,52 @@
+---
+title: "Git-branches"
+author: "Julien Brun, NCEAS"
+date: "11/10/2018"
+output: html_document
+---
+
+# Branches
+
+![adapted from https://www.atlassian.com/git/tutorials/git-merge](images/atlassian_branches_sketch.png)
+
+What are branches?  Well in fact nothing new, as the master is a branch. A branch represents an independent line of development, parallel to the master (branch). 
+
+Why should I use branches? For 2 main reasons:
+
+* We want the master to only keep a version of the code that is working
+* We want to version the code we are developing to add/test new features (for now we mostly talk about feature branch) in our script without altering the version on the master.
+
+### Working with branches
+
+#### Creating and using a branch
+
+Few commands to deal with branches:
+
+* `git branch`	Will list the existing branches
+* `git branch myBranchName` 	Will create a new branch with the
+							name myBranchName
+* `git checkout myBranchName` Will switch to the branch myBranchName
+
+<img style="float: left;width: 30px;" src="images/tip.png"/> In a rush? create a new branch and switch to it directly:
+
+```{bash, eval=FALSE}
+git checkout -b branchName
+```
+
+
+**Want to switch back to master?**
+
+```{bash, eval=FALSE}
+git checkout master
+```
+
+***=> Once you have switched to your branch, all the rest of the git workflow stays the same (git add, commit, pull, push)***
+
+#### Creating and using a branch
+
+Done with your branch? Want to merge your new - ready for prime time - script to the master?
+
+1. Switch back to the master: 	```git checkout master```
+2. Get the latest version of the master: ```git pull origin master```
+3. Merge the branch: 			```git merge myBranchName ```
+4. Delete the branch:			```git branch -d myBranchName```

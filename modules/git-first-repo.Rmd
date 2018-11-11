@@ -4,8 +4,6 @@ author: "NCEAS"
 maintainer: "Julien Brun"
 output: 
   html_document:
-    include:
-      after_body: footer.html
     theme: "spacelab"
     # df_print: "paged"
     toc: true

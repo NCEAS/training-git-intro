@@ -1,0 +1,38 @@
+---
+title: "git workflows"
+author: "NCEAS"
+maintainer: "Julien Brun"
+last_updated_by: "Julien Brun"
+output: 
+  html_document:
+    theme: "spacelab"
+    # df_print: "paged"
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+params:
+  output_dir: "docs"
+---
+
+# Collaborative Workflows with `GitHub`
+
+## Collaborating through Forking, aka the GitHub workflow
+
+A **fork** is a **copy of a repository** that will be stored under your user account. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+
+When you are satisfied with your work, you can initiate a ***Pull Request*** to initiate discussion about your modifications and requesting to integrate your changes to the main repository. Your commit history allows the original repository administrators to see exactly what changes would be merged if they accept your request.  
+
+By using GitHub's `@mention` syntax in your Pull Request message, you can ask for feedback from specific people or teams.
+
+## Collaborating through write / push access
+
+When you collaborate closely and actively with colleagues, you do not want necessarily to have to review all their changes through pull requests. You can then give them write access (`git push`) to your repository to allow them to directly edit and contribute to its content.
+
+#### Adding collaborators to a repository 
+
+* Click on the repository
+* On the right panel, click ![](images/github-repo-settings.png)
+* On the left pane, click Collaborators and enter the usernames you want to add![collaborators](images/github-collaborators.png) 

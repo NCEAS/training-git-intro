@@ -1,0 +1,44 @@
+---
+title: "Git-conflicts"
+author: "NCEAS"
+maintainer: "Julien Brun"
+last_updated_by: "Julien Brun"
+output: 
+  html_document:
+    theme: "spacelab"
+    # df_print: "paged"
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+params:
+  output_dir: "docs"
+---
+
+# Managing Merge Conflicts
+
+The most common cause of merge conflicts happens when another user changes the same file that you just modified. It can happen during pull from a remote repository (or when merging branches).
+
+1. If you **know for sure** what file version you want to keep:
+
+ * keep the remote file: ```git checkout --theirs conflicted_file.txt```
+ * keep the local file: ```git checkout --ours conflicted_file.txt```
+
+*=> You still have to* ```git add``` *and* ```git commit``` *after this*
+
+2. If you do not know why there is a conflict:
+  Dig into the files, looking for:
+
+```{bash, eval=FALSE}
+<<<<<<< HEAD
+local version (ours)
+=======
+remote version (theirs)
+>>>>>>> [remote version (commit#)]
+```
+
+*=> You still have to* `git add` *and* `git commit` *after this*
+
+During this process, if you want to roll back to the situation before you started the merge: `git merge --abort`
+
+
