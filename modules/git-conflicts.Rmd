@@ -25,6 +25,7 @@ The most common cause of merge conflicts happens when another user changes the s
  * keep the local file: ```git checkout --ours conflicted_file.txt```
 
 *=> You still have to* ```git add``` *and* ```git commit``` *after this*
+ (git checkout)
 
 2. If you do not know why there is a conflict:
   Dig into the files, looking for:
@@ -36,7 +37,7 @@ local version (ours)
 remote version (theirs)
 >>>>>>> [remote version (commit#)]
 ```
-
+Manually make the required changes to merge these two versions, and remove the lines that git created (eg "<<<<<<< HEAD")  
 *=> You still have to* `git add` *and* `git commit` *after this*
 
 During this process, if you want to roll back to the situation before you started the merge: `git merge --abort`

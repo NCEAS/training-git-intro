@@ -14,13 +14,13 @@ output:
 
 # Setting up git on your computer
 
-`MacOSX` and `Linux` computers all come with git pre-install, but not always directly usable. The best way to test if `git` is ready to use is at the command line:
+`MacOSX` and `Linux` computers all come with git pre-installed, but it is not always directly usable. The best way to test if `git` is ready to use is at the command line:
 
 ```{bash git test}
 git --version
 ```
 
-It should return something like above. *If you get an error, you will have to install git**
+It should return something like above. **If you get an error, you will have to install git**
 
 
 `Windows` users will have to install a software called `git bash` before being able to use git.
@@ -38,7 +38,7 @@ You can keep the options to default during the installation, until you reach `Co
 
 ### Mac OSX 
 
-Depending on the version, you might have to run few commands from the terminal. Please refer to the `README.txt` that comes with the download regarding the exact steps to follow.
+Depending on the version, you might have to run a few commands from the terminal. Please refer to the `README.txt` that comes with the download regarding the exact steps to follow.
 
 
 ## Setting up your `git` identity
@@ -76,9 +76,9 @@ Set your text editor:
 git config --system core.editor nano
 ```
 
-Here [`nano`]() is used as example; you can choose most of the text editor you might have installed on your computer (atom, sublime, notepad++ ...).
+Here [`nano`](https://www.nano-editor.org) is used as example; you can choose most of the text editor you might have installed on your computer (atom, sublime, notepad++ ...).
 
-Problem with any of those steps? Check out Jenny Brian [Happy git trouble shooting section] (http://happygitwithr.com/troubleshooting.html){target="_blank"}
+Problem with any of those steps? Check out Jenny Brian [Happy git trouble shooting section](http://happygitwithr.com/troubleshooting.html){target="_blank"}
 
 ## Linking git and RStudio
 

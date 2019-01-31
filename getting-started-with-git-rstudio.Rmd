@@ -102,7 +102,7 @@ This document is a compilation of [NCEAS](https://github.com/NCEAS/) training ma
 - R packages - Git and GitHub: http://r-pkgs.had.co.nz/git.html#git-init
 - Happy Git and GitHub for the useR: http://happygitwithr.com/
  
-## Mainly from the ocmmand line:
+## Mainly from the command line:
 - Interactive git 101: [https://try.github.io/](https://try.github.io/)
 - Very good tutorial about git: [https://www.atlassian.com/git/tutorials/what-is-version-control](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - Git tutorial geared towards scientists: [http://nyuccl.org/pages/gittutorial/](http://nyuccl.org/pages/gittutorial/)
