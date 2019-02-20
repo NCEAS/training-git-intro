@@ -58,9 +58,9 @@ knitr::include_graphics("images/rstudio-git-icons.png")
 In our case, it means that:
 
 - the `.gitignore`file has been modified since the last commit
-- the  `.Rpoj` file has never been tracked by `git`  (remember RStudio just created this project file for us)
+- the  `.Rproj` file has never been tracked by `git`  (remember RStudio just created this project file for us)
 
-Note also that the `README.md` file is not listed, but it exists, see `Files`pane. It is because files with no modifications since last commit are not listed. 
+Note also that the `README.md` file is not listed, but it exists (see `Files`pane). It is because files with no modifications since last commit are not listed. 
 
 GitHub has created the `.gitignore` file for us and we have not modified it since. So why is it listed as modified? We can check this by clicking on the `Diff` button (upper-left on the Git pane).
 
@@ -82,7 +82,7 @@ As soon as you saved your changes, you should see the `README.md` file listed as
 knitr::include_graphics("images/rstudio-git-panel-modified.png")
 ```
 
-Let us look at the diff of the `README.md` file. As you can see, the original lines are in red, in other words for git those lines have been deleted. The new lines that we just typed are in green, in other words these lines have been added for git. Note the line numbers in the left margin that help you to track which line have been removed and added.
+Let us look at the diff of the `README.md` file. As you can see, the original lines are in red, in other words for git those lines have been deleted. The new lines that we just typed are in green, which indicates that these lines have been added for git. Note the line numbers in the left margin that help you to track which line have been removed and added.
 
 
 ```{r RStudio git diff readme, out.width='70%', fig.align='center', echo = FALSE}
@@ -112,9 +112,9 @@ Once done, add both the `.gitignore` and the `myfirst-repo.Rproj` and commit tho
 
 ### Good Commit Message Tips
 
-Clearly, good documentation of what you’ve done is critical to making the version history of your repository meaningful and helpful. Its tempting to skip the commit message altogether, or to add some stock blurd like ‘Updates’. Its better to use messages that will be helpful to your future self in deducing not just what you did, but why you did it. Also, commit messaged are best understood if they follow the active verb convention. For example, you can see that my commit messages all started with a past tense verb, and then explained what was changed.
+Clearly, good documentation of what you’ve done is critical to making the version history of your repository meaningful and helpful. Its tempting to skip the commit message altogether, or to add some stock blurd like ‘Updates’. Its better to use messages that will be helpful to your future self in deducing not just what you did, but why you did it. Also, commit messages are best understood if they follow the active verb convention. For example, you can see that my commit messages all started with a past tense verb, and then explained what was changed.
 
-While some of the changes we illustrated here were simple and so easily explained in a short phrase, for more complex changes, its best to provide a more complete message. The convention, however, is to always have a short, terse first sentence, followed by a more verbose explanation of the details and rationale for the change. This keeps the high level details readable in the version log. I can’t count the number of times I’ve looked at the commit log from 2, 3, or 10 years prior and been so grateful for diligence of my past self and collaborators.
+While some of the changes we illustrated here were simple and easily explained in a short phrase, for more complex changes, its best to provide a more complete message. The convention, however, is to always have a short, terse first sentence, followed by a more verbose explanation of the details and rationale for the change. This keeps the high level details readable in the version log. I can’t count the number of times I’ve looked at the commit log from 2, 3, or 10 years prior and been so grateful for diligence of my past self and collaborators.
 
 ## Looking at the Repository History
 
@@ -129,7 +129,7 @@ You can see that there has been 3 commits so far. The first one has been done by
 
 ## Sending changes back to GitHub
 
-Now that we have created these two commits on our local machine, our local version of the repository is different from the version on GitHub. RStudio communicate you this information. If you look below the icons on the git pane, you will see the warning message: "Your branch is ahead of 'origin/master' by two commits". This can be translated as you have two additional commits on your local machine that you never shared back to the remote repository on GitHub. Open your favorite web browser and look at the content of your repository on GitHub. You will see the old version of the `README.md` and `.gitignore` file and no trace of the `.Rproj` file.
+Now that we have created these two commits on our local machine, our local version of the repository is different from the version on GitHub. RStudio communicate this information to you. If you look below the icons on the git pane, you will see the warning message: "Your branch is ahead of 'origin/master' by two commits". This can be translated as you have two additional commits on your local machine that you never shared back to the remote repository on GitHub. Open your favorite web browser and look at the content of your repository on GitHub. You will see the old version of the `README.md` and `.gitignore` file and no trace of the `.Rproj` file.
 
 ```{r RStudio git 2 local commits, fig.align='center', echo = FALSE}
 knitr::include_graphics("images/repo-not-synched.png")
@@ -139,7 +139,7 @@ There are two git commands to exchange between a local and remote versions of a 
 - `pull`: git will get the latest remote version and try to merge it with your local version
 - `push`: git will send your local version to the remote version of the repository (in our case GitHub)
 
-Before sending your local version to the remote, you should always get the latest remote version first. IN other words, you should pull first and push second. It is the way git is protecting the remote version against incompatibilities between the two versions. You always deal with potential problems on your local machine. Therefore your sequence will always be:
+Before sending your local version to the remote, you should always get the latest remote version first. In other words, you should pull first and push second. This is the way git protects the remote version against incompatibilities with the local version. You always deal with potential problems on your local machine. Therefore your sequence will always be:
 
 1. `pull`
 2. `push`
