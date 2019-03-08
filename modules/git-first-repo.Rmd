@@ -69,7 +69,7 @@ To create a new repository follow these steps:
 - Enter a descriptive name for your new repository, `myfirst-repo`  
 (avoid upper case and use `-` instead of spaces or `_`)
 - Write a 1-sentence description about the repository content
-- Choose **"Public"** (Private repositories are not free)
+- Choose **"Public"** (as of January 2018, GitHub now offers unlimited free private repositories with a maximum of 3 collaborators)
 - Check **"Initialize this repository with a README"**
 - Add a `.gitignore` file (optional). As the name suggest, the gitignore file is used to specify the file format that git should not track. GitHub offers pre-written gitignore files for commodity
 - Add a license file (optional) 
