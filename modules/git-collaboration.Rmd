@@ -37,7 +37,7 @@ When you collaborate closely and actively with colleagues, you do not want neces
 
 * Click on the repository
 * On the right panel, click ![](images/github-repo-settings.png)
-* On the left pane, click Collaborators and enter the usernames you want to add![collaborators](images/github-collaborators.png) 
+* On the left pane, click `Collaborators` and enter the usernames you want to add![collaborators](images/github-collaborators.png) 
 
 Under this collaborative workflow, we recommend to use git `branches` combined with pull requests to avoid conflicts and to track and discuss collaborators contributions.
 
@@ -52,8 +52,41 @@ Why should you use branches? For 2 main reasons:
 * We want the master to only keep a version of the code that is working
 * We want to version the code we are developing to add/test new features (for now we mostly talk about feature branch) in our script without altering the version on the master.
 
-### Working with branches
+## Working with branches
 
-#### Creating and using a branch
+### Creating a new branch
+
+In RStudio, you can create a branch using the git tab. 
+
+1. Click on the branch button
+```{r RStudio git pane branch, out.width='60%', fig.align='center', echo = FALSE}
+knitr::include_graphics("images/rstudio-git-branch-create.png")
+```
+2. Fill the branch name in the new branch window; in this example, we are going to use `test` for the name; leave the other options as default and click create 
+```{r RStudio git new branch window, out.width='40%', fig.align='center', echo = FALSE}
+knitr::include_graphics("images/rstudio-git-branch-test.png")
+```
+3. you will be directly creating a local and remote branch and switch to it 
+```{r RStudio git new branch, out.width='62%', fig.align='center', echo = FALSE}
+knitr::include_graphics("images/rstudio-git-branch-new.png")
+```
+
+Congratulations you just created your first branch! 
+
+Let us check on Github:
+
+```{r RStudio github new branch, out.width='45%', fig.align='center', echo = FALSE}
+knitr::include_graphics("images/github-new-branch")
+```
+
+As you can see, now there are two branches on our remote repository: 
+- master
+- test
+
+### Using a branch
+
+Here there is nothing new. The workflow is exactly the same as we did before, execepts our commit will be created on the `test` branch instead of the master branch.
+
+Let us create our first R Script in this repository
 
 
