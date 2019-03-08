@@ -19,13 +19,17 @@ params:
 
 ## Collaborating through Forking, aka the GitHub workflow
 
-A **fork** is a **copy of a repository** that will be stored under your user account. Forking a repository allows you to freely experiment with changes without affecting the original project.
-
+A **fork** is a **copy of a repository** that will be stored under your user account. Forking a repository allows you to freely experiment with changes without affecting the original project. We can create a fork on Github by clicking the "fork" button in the top right corner of our repository webpage.
+![](images/github-fork.png) 
+  
+  
 Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
 
-When you are satisfied with your work, you can initiate a ***Pull Request*** to initiate discussion about your modifications and requesting to integrate your changes to the main repository. Your commit history allows the original repository administrators to see exactly what changes would be merged if they accept your request.  
-
-By using GitHub's `@mention` syntax in your Pull Request message, you can ask for feedback from specific people or teams.
+When you are satisfied with your work, you can initiate a ***Pull Request*** to initiate discussion about your modifications and requesting to integrate your changes to the main repository. Your commit history allows the original repository administrators to see exactly what changes would be merged if they accept your request. Do this by going to the original repository and clicking the "New pull request" button![](images/github-pull-request.png)  
+  
+Next, click "compare across forks", and use the dropdown menus to select your fork as the "head fork" and the original repository as the "base fork".![](images/github-compare-forks.png)  
+  
+Then type a title and description for the changes you would like to make. By using GitHub's `@mention` syntax in your Pull Request message, you can ask for feedback from specific people or teams.
 
 This workflow is recommende when you do not have push/write access to a repository, such as contributing to a open source software or R package, or if you are heavily changing a project.
 

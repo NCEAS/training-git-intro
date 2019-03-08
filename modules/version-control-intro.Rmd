@@ -14,11 +14,11 @@ output:
 
 # Introduction to Version Control Concepts
 
-Version control is a system that helps you to manage the version of your files. It will help you to never have to duplicate files using `save as` as a way to keep different versions of a file (see below). Version control help you to create a timeline of snapshots containing different versions of a file. Bonus you can add a short description to remember what each specific version is about.
+Version control is a system that helps you to manage the version of your files. It will help you to never have to duplicate files using `save as` as a way to keep different versions of a file (see below). Version control help you to create a timeline of snapshots containing different versions of a file. Bonus: you can add a short description to remember what each specific version is about.
 
 ```{r file version craziness, out.width='60%', fig.align='center', echo = FALSE}
 knitr::include_graphics("images/phd_comics_final.png")
 ```
 
 
-For scientists, version control is a useful tool to help you to track changes you make to your **scripts** and enable you to share your codes with your collaborators. For example, if you break your code, git can help you to revert to an earlier working version. Another example could be that you want one of your collaborators to add a new feature to your code to improve your analysis? Version control can help you to do so in a smooth and organized manner, tracking who changed what in the script.
+For scientists, version control is a useful tool to help you to track changes you make to your **scripts** and enable you to share your code with your collaborators. For example, if you break your code, git can help you revert to an earlier working version. Another example could be that you want one of your collaborators to add a new feature to your code to improve your analysis. Version control can help you to do so in a smooth and organized manner, tracking who changed what in the script.
