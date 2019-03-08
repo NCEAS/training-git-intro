@@ -80,7 +80,7 @@ Congratulations you just created your first branch!
 Let us check on Github:
 
 ```{r RStudio github new branch, out.width='45%', fig.align='center', echo = FALSE}
-knitr::include_graphics("images/github-new-branch")
+knitr::include_graphics("images/github-new-branch.png")
 ```
 
 As you can see, now there are two branches on our remote repository: 
