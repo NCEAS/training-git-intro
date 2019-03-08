@@ -27,12 +27,33 @@ When you are satisfied with your work, you can initiate a ***Pull Request*** to 
 
 By using GitHub's `@mention` syntax in your Pull Request message, you can ask for feedback from specific people or teams.
 
+This workflow is recommende when you do not have push/write access to a repository, such as contributing to a open source software or R package, or if you are heavily changing a project.
+
 ## Collaborating through write / push access
 
-When you collaborate closely and actively with colleagues, you do not want necessarily to have to review all their changes through pull requests. You can then give them write access (`git push`) to your repository to allow them to directly edit and contribute to its content.
+When you collaborate closely and actively with colleagues, you do not want necessarily to have to review all their changes through pull requests. You can then give them write access (`git push`) to your repository to allow them to directly edit and contribute to its content. This is the workflow we will recommend to use within your working group.
 
 #### Adding collaborators to a repository 
 
 * Click on the repository
 * On the right panel, click ![](images/github-repo-settings.png)
 * On the left pane, click Collaborators and enter the usernames you want to add![collaborators](images/github-collaborators.png) 
+
+Under this collaborative workflow, we recommend to use git `branches` combined with pull requests to avoid conflicts and to track and discuss collaborators contributions.
+
+# Branches
+
+![adapted from https://www.atlassian.com/git/tutorials/git-merge](images/atlassian_branches_sketch.png)
+
+What are branches?  Well in fact nothing new, as the `master` is a branch. A branch represents an independent line of development, parallel to the master (branch). 
+
+Why should you use branches? For 2 main reasons:
+
+* We want the master to only keep a version of the code that is working
+* We want to version the code we are developing to add/test new features (for now we mostly talk about feature branch) in our script without altering the version on the master.
+
+### Working with branches
+
+#### Creating and using a branch
+
+
