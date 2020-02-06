@@ -31,7 +31,7 @@ Next, click "compare across forks", and use the dropdown menus to select your fo
   
 Then type a title and description for the changes you would like to make. By using GitHub's `@mention` syntax in your Pull Request message, you can ask for feedback from specific people or teams.
 
-This workflow is recommende when you do not have push/write access to a repository, such as contributing to a open source software or R package, or if you are heavily changing a project.
+This workflow is recommended when you do not have push/write access to a repository, such as contributing to a open source software or R package, or if you are heavily changing a project.
 
 ## Collaborating through write / push access
 
