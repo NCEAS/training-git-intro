@@ -120,13 +120,13 @@ This document is a compilation of [NCEAS](https://github.com/NCEAS/) training ma
 ## GitHub Workflow
 
 - GitHub:
- - guides on how to use GitHub: [https://guides.github.com/](https://guides.github.com/)
- - GitHub from RStudio: [http://r-pkgs.had.co.nz/git.html#git-pull](http://r-pkgs.had.co.nz/git.html#git-pull)
+   - guides on how to use GitHub: [https://guides.github.com/](https://guides.github.com/)
+   - GitHub from RStudio: [http://r-pkgs.had.co.nz/git.html#git-pull](http://r-pkgs.had.co.nz/git.html#git-pull)
 - Forking:
- - [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
- - [https://guides.github.com/activities/forking/](https://guides.github.com/activities/forking/)
+   - [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
+   - [https://guides.github.com/activities/forking/](https://guides.github.com/activities/forking/)
 - Comparison of git repository host services: <https://www.git-tower.com/blog/git-hosting-services-compared/>
 - Branches
- - 	interactive tutorial on branches: <http://learngitbranching.js.org/>
- -  using git in a collaborative environment: <https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow>
+   - interactive tutorial on branches: <http://learngitbranching.js.org/>
+   - using git in a collaborative environment: <https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow>
  
