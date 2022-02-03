@@ -37,7 +37,7 @@ This workflow is recommended when you do not have push/write access to a reposit
 
 When you collaborate closely and actively with colleagues, you do not want necessarily to have to review all their changes through pull requests. You can then give them write access (`git push`) to your repository to allow them to directly edit and contribute to its content. This is the workflow we will recommend to use within your working group.
 
-#### Adding collaborators to a repository 
+### Adding collaborators to a repository 
 
 * Click on the repository
 * On the right panel, click ![](images/github-repo-settings.png)
