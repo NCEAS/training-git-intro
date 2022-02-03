@@ -12,7 +12,8 @@ output:
     number_sections: true
 ---
 
-# git <img style="float: right;width: 100px;" src="images/git_icon.png">
+# git
+<img style="float: right;width: 100px;" src="images/git_icon.png">
 
 This training material focuses on the code versioning system called `Git`. Note that there are others, such as `Mercurial` or `svn` for example.
 
