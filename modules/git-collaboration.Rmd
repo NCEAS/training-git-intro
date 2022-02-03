@@ -29,7 +29,7 @@ When you are satisfied with your work, you can initiate a ***Pull Request*** to 
   
 Next, click "compare across forks", and use the dropdown menus to select your fork as the "head fork" and the original repository as the "base fork".![](images/github-compare-forks.png)  
   
-Then type a title and description for the changes you would like to make. By using GitHub's `@mention` syntax in your Pull Request message, you can ask for feedback from specific people or teams.
+Then type a title and description for the changes you would like to make. By using GitHub's `@mention` syntax in your Pull Request message, you can ask for feedback from specific people or teams. 
 
 This workflow is recommended when you do not have push/write access to a repository, such as contributing to a open source software or R package, or if you are heavily changing a project.
 
