@@ -26,9 +26,9 @@ Let's distinguish between git and GitHub:
 
 - __git__: version control software used to track files in a folder (a repository)
     - git creates the versioned history of a repository
-- __GitHub__: web site that allows users to store their git repositories and share them with others
+- __GitHub__: website that allows users to store their git repositories and share them with others (i.e. a graphical user interface or "GUI")
 	
-**GitHub is a company that hosts git repositories online** and provides several collaboration features (among which `forking`). GitHub fosters a great user community and has built a nice web interface to git, also adding great visualization/rendering capacities of your data.
+**GitHub is a company that hosts git repositories online** and provides several collaboration features (including `forking`). GitHub fosters a great user community and has built a nice web interface to git, also adding great visualization/rendering capacities of your data.
 
 - **GitHub.com**: <https://github.com>
 - **A user account**: <https://github.com/brunj7>
@@ -107,7 +107,7 @@ knitr::include_graphics("images/rstudio-project-version-control.png")
 4. Go back to your web browser and from the GitHub repository page click on the green `clone or download` button and copy the URL to your repository.  
 _Note_: The URL should start with "https\://". If it starts with "git\@github.com", click "Use HTTPS" above the URL.
 ![](images/github-get-url.png)
-5. Paste this URL in the first box and leave the second box empty. Finally select a location on your HD where the repository will be cloned to.
+5. Paste this URL in the first box and do not change the second box (it will either remain blank or autofill with the name of the repository from the link, either is fine). Finally select a location on your hard drive ("HD") where the repository will be cloned to.
 ```{r RStudio project git panel, out.width='50%', fig.align='center', echo = FALSE}
 knitr::include_graphics("images/rstudio-project-clone.png")
 ```
