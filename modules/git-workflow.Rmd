@@ -116,6 +116,11 @@ Clearly, good documentation of what you’ve done is critical to making the vers
 
 While some of the changes we illustrated here were simple and easily explained in a short phrase, for more complex changes, its best to provide a more complete message. The convention, however, is to always have a short, terse first sentence, followed by a more verbose explanation of the details and rationale for the change. This keeps the high level details readable in the version log. I can’t count the number of times I’ve looked at the commit log from 2, 3, or 10 years prior and been so grateful for diligence of my past self and collaborators.
 
+```{r commit message comic, out.width='60%', fig.align='center', echo = FALSE, fig.cap = 'from xkcd comics'}
+knitr::include_graphics("images/xkcd_commit_comic.png")
+```
+
+
 ## Looking at the Repository History
 
 We have done 2 new commits at this point. Let us look at the commit timeline we have created so far. You can click on the `Clock` icon at the top to visualize the history.
